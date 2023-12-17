@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitFav</title>
+  <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+  <script type="module" src="./js/main.js" defer></script>
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1><img src="./assets/Gitfav.svg" alt="Logo GitFav"></h1>
+
+      <div id="search">
+        <label class="sr-only" for="input-search">FAVORITAR</label>
+        <input type="text" id="input-search" placeholder="Digite o Github username que quer favoritar">
+        <button><img src="./assets/star.svg" alt="Estrela"><span>FAVORITAR</span></button>
+      </div>
+    </header>
+    <table>
+      <thead>
+        <tr>
+          <th>User</th>
+          <th>Repositories</th>
+          <th>Followers</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="user">
+            <img src="https://github.com/murilo-augusto.png" alt="">
+            <a href="https://github.com/murilo-augusto" target="_blank">
+              <p>Murilo Augusto</p>
+              <span>/murilo-augusto</span>
+            </a>
+          </td>
+          <td class="rpositories">3</td>
+          <td class="followers">1</td>
+          <td><button class="remove">Remover</button></td>
+        </tr>
+        <tr>
+          <td class="user">
+            <img src="https://github.com/maykbrito.png" alt="">
+            <a href="https://github.com/maykbrito" target="_blank">
+              <p>Mayk Brito</p>
+              <span>/maykbrito</span>
+            </a>
+          </td>
+          <td class="rpositories">3</td>
+          <td class="followers">1</td>
+          <td><button class="remove">Remover</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
